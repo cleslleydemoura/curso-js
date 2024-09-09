@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aprendendo JavaScript - Aula 2 [Tipos de Saída]</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+    <p id="texto"></p>
+    <!-- O `innerHTML` é uma propriedade tanto de leitura quanto de escrita do Document Object Model (DOM) 
+    que permite ao desenvolvedor ***acessar ou modificar o conteúdo HTML de um elemento específico.***-->
+    <!--                Utilizando document.write              -->
+    <p>
+        <script>
+            document.write('<u>Escrito com document.write</u>')
+            // Também aceita funções...
+            document.write('<br>', (5+5)/2);
+        </script>
+    </p>
+    <script src="script.js"></script>
+</body>
+</html>
