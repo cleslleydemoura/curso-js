@@ -22,7 +22,7 @@ var NOME = "CLESLLEY";
 console.log(nome);
 console.log(NOME);
 
-// No JS nãodeve se udar hífen na declaração de variavéis.
+// No JS não deve se usar hífen na declaração de variavéis.
 
 // var primeiro-nome; <-- errado.
 var primeiro_nome; // <-- correto.
