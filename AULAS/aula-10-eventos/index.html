@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aprendendo JavaScript - Aula 10 [Eventos]</title>
+</head>
+<!-- onmousedown --> <!-- onmousedown -->
+<body onresize="console.log('Houve um redimensionamento da tela.')"> <!-- onmousedown/up=" alert('Clicou na tela.')" -> se for adicionado aqui retira a funcionalidade dos demais butões. -->
+    <!-- onclick -->
+    <button onclick="eventoClique()">onclick</button>
+    <!-- ondblclick -->
+    <button ondblclick="eventoDblClick()">ondblclick</button>
+    <br><br>
+    
+    <!-- onmouseover-->
+    <div id="teste" onmousemove="addText()" onmouseout="backToColor()" onmouseover="turnYellow()">
+
+    </div><br>
+    <input onfocus="limpaTexto()" id="campoTexto" type="text" placeholder="Digite Algo" value="Insira seu texto aqui.">
+    <input onchange="mudou()" id="campoTexto2" type="text" placeholder="Digite Algo" value="Seu texto aqui.">
+    <br><br>
+    <input id="campoTexto3" onkeypress="teclaPressionada()" type="text">
+    <input id="campoTexto4" onkeydown="teclaPressionada2()" type="text">
+    <br><br>
+    <input id="campoTexto5" onkeyup="teclaPressionada3()" type="text">
+    <p id="texto"></p>
+    <script src="/AULAS/aula-10-eventos/script.js"></script>
+</body>
+</html>
