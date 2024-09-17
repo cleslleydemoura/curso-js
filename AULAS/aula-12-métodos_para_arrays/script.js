@@ -1,4 +1,8 @@
-// Métodos
+/*
+
+    ---> MÉTODOS
+
+*/
 
 // JOIN
 const pessoa = ["Cleslley", "Moura", 21];
