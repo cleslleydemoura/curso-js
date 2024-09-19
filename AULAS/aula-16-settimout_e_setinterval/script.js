@@ -14,10 +14,12 @@
 
 */
 
+let tempo, tempo1, tempoA;
+
 function ativarContagem() {
     document.getElementById("temporizador").innerHTML = "Começou a contar!"; // Aparece assim que o botão for clicado.
     // Aparece apenas após o tempo colocado dentro do setTimeout.
-    tempo = setTimeout(function() {document.getElementById("temporizador").innerHTML = "Executou o setTimeout!";
+    tempoA = setTimeout(function() {document.getElementById("temporizador").innerHTML = "Executou o setTimeout!";
                           document.body.style.backgroundColor = "green";
                           }, 5000);
     // 'tempo' não precisa ser definido como var, let, const por conta do escopo.
@@ -25,7 +27,7 @@ function ativarContagem() {
 }
 
 function PararContagem() {
-    clearTimeout(tempo);
+    clearTimeout(tempoA);
     clearInterval(tempo);
     clearInterval(tempo1);
     document.getElementById("temporizador").innerHTML = "Parou a contagem!";
